@@ -292,7 +292,7 @@ body {
     }
     .content {
         background: white;
-        width: 310px;
+        width: 300px;
         margin: 150px auto;
         height: 650px;
     }
@@ -314,8 +314,8 @@ body {
         display: none;
     }    
     .text {
-        transform: translate(20px, -500px);
-        width: 270px;
+        transform: translate(25px, -500px);
+        width: 250px;
     }    
     .text h1 {
         padding-bottom: 15px;
