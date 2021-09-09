@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,200;0,400;0,600;1,300&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+  }
+
+
+.projects {
+    display: flex;
+}
+
+.projects .left-side {
+    background-image:url(images/bg-pattern-desktop.svg);
+    background-size: cover;
+    width: 100%;
+    padding-left: 150px ;
+}
+
+#desktop {
+    width: 610px;
+}
+
+#mobile {
+    display: none;
+}
+
+#logo-desktop {
+    padding: 60px 0px;
+}
+
+#logo-mobile {
+    display: none;
+}
+
+.projects .left-side h1 {
+    padding-top: 40px;
+    text-transform: uppercase;
+    font-size: 70px;
+    word-spacing: 100px;
+    letter-spacing: 15px;
+    color: hsl(0, 36%, 70%);
+    font-weight: 100;
+}
+
+.projects .left-side h1 span{
+    text-transform: uppercase;
+    font-size: 70px;
+    word-spacing: 100px;
+    letter-spacing: 12px;
+    color: hsl(0, 6%, 24%);
+    font-weight: 600;
+}
+
+.projects .left-side h3 {
+    padding: 20px 0 45px 0;
+    color: hsl(0, 36%, 70%);
+    font-weight: 300;
+    line-height: 22px;
+    font-size: 16px;
+}
+
+
+.projects .left-side .mail {
+    display: inline-flex;
+}
+
+#error-el {
+    width: 100px;
+    border-radius: 30px;
+    padding: 15px 40px;
+    transform: translateX(210px);
+    transition: 1s ease ease-in-out;
+    cursor: pointer;
+    position: absolute;
+    display: none;
+}
+
+#img-el{
+    background: -webkit-linear-gradient(-135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+    background: -o-linear-gradient(-135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%)); 
+    background: -moz-linear-gradient(-135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+    background: linear-gradient(-135deg, hsl(0, 80%, 86%),hsl(0, 74%, 74%)); 
+    width: 100px;
+    height: 50px;
+    border-radius: 30px;
+    padding: 15px 45px;
+    transform: translateX(-80px);
+    transition: 1s ease ease-in-out;
+    cursor: pointer;
+}
+
+#img-el:hover {
+    background: -webkit-linear-gradient(-135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+    background: -o-linear-gradient(-135deg, hsl(0, 0%, 100%), hsl(0, 74%, 74%)); 
+    background: -moz-linear-gradient(-135deg, hsl(0, 0%, 100%), hsl(0, 74%, 74%));
+    background: linear-gradient(-135deg, hsl(0, 80%, 86%),hsl(0, 100%, 88%)); 
+}
+
+.projects .left-side .mail input {
+    padding: 0px 10px;
+    border-radius: 30px;
+    outline: none;
+    border: 1px solid hsl(0, 36%, 70%);
+}
+
+p {
+    padding: 20px;
+    color: red;
+}
+
+@media (max-width: 800px) {
+    .projects {
+        flex-direction: column-reverse;
+    }
+    
+    .projects .left-side {
+        padding: 20px 0px 50px 0px;
+        text-align: center;
+    }
+
+    #desktop {
+        display: none;
+    }
+    
+    #mobile {
+        display: flex;
+        width: 100%;
+        background-size: contain;
+        padding: 10px 0px 0px 0px;
+    }
+    
+    .projects .right-side {
+        width: 100%;
+    }
+    
+    #logo-desktop {
+        display: none;
+    }
+    
+    #logo-mobile {
+        display: flex;
+        background: white;
+        width: 30%;
+        padding: 30px 0px 20px 60px;
+        transform: translateX(-40px);
+    }
+
+
+    .projects .left-side h1 {
+        text-transform: uppercase;
+        font-size: 45px;
+    }
+    
+    .projects .left-side h1 span{
+        font-size: 60px;
+    }
+    
+    .projects .left-side .mail {
+        display: inline-flex;
+        padding-left: 0px;
+    }
+
+    #img-el{
+        transform: translateX(-70px);
+    }
+    
+    .projects .left-side .mail input {
+        width: 60%;
+        margin: 0px auto;
+        transform: translate(10%, -0%);
+        
+    }
+}
+
+@media (max-width: 500px) {
+    #img-el{
+        transform: translateX(-60px);
+    }
+}
+
+
+@media (max-width: 400px) {
+#logo-mobile {
+    width: 40%;
+}
+
+.projects .left-side h1 {
+    font-size: 35px;
+}
+
+.projects .left-side h1 span{
+    font-size: 50px;
+}
+
+.projects .left-side h3 {
+    font-size: 12px;
+}
+
+.projects .left-side .mail {
+    display: inline-flex;
+    padding-left: 0px;
+}
+
+#img-el{
+    transform: translateX(-60px);
+}
+
+.projects .left-side .mail input {
+    width: 60%;
+    margin: 0px auto;
+    transform: translate(10%, -0%);   
+}
+
+p {
+    padding: 20px;
+    color: red;
+}
+}
