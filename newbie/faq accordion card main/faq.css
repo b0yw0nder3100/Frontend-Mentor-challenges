@@ -292,7 +292,7 @@ body {
     }
     .content {
         background: white;
-        width: 300px;
+        width: 310px;
         margin: 150px auto;
         height: 650px;
     }
@@ -314,8 +314,8 @@ body {
         display: none;
     }    
     .text {
-        transform: translate(25px, -500px);
-        width: 250px;
+        transform: translate(20px, -500px);
+        width: 270px;
     }    
     .text h1 {
         padding-bottom: 15px;
@@ -330,7 +330,7 @@ body {
     .text li {
         padding-top: 8px;
         padding-bottom: 10px;
-        font-size: 12px;
+        font-size: 11px;
         border-bottom: 2px solid hsl(240, 5%, 91%);
         border-spacing: 20px;
         list-style: none;
