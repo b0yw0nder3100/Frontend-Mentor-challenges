@@ -1,0 +1,350 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100;200;300;400;500;600;700&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Kumbh Sans";  
+}
+body {
+    background: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+    background-repeat: no-repeat;
+    
+}
+.content {
+    background: white;
+    width: 1000px;
+    margin: 125px auto;
+    height: 550px;
+    border-radius: 15px;
+}
+.images {
+    background: url(images/bg-pattern-desktop.svg);
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position-x:-570px;
+    background-position-y: -290px;
+}
+
+.woman {
+    background: url(images/illustration-woman-online-desktop.svg);
+    height: 150%;
+    background-repeat: no-repeat;
+    background-position-x:-90px;
+    background-position-y: 50px;
+    z-index: 20;
+}
+
+.content img {
+    display: none;
+}
+
+#box {
+    display: block;
+    position: absolute;
+    transform: translate(-130px, -350px);
+}
+
+.text {
+    transform: translate(500px, -480px);
+    width: 430px;
+}
+
+.text h1 {
+    padding-bottom: 15px;
+    font-size: 35px;
+    color: hsl(237, 12%, 33%);
+    font-weight: 700;
+}
+
+.questions {
+    color: hsl(237, 12%, 33%);
+}
+
+.text li {
+    padding-top: 8px;
+    padding-bottom: 10px;
+    font-size: 17px;
+    border-bottom: 2px solid hsl(240, 5%, 91%);
+    border-spacing: 20px;
+    list-style: none;
+    font-weight: 500;
+}
+
+.text li:hover {
+    color: hsl(14, 88%, 65%);
+}
+
+.text img {
+    position: sticky;
+    display: block;
+    float: right;
+    transform: translateY(10px);
+    transform: rotate(0deg);
+}
+
+.text p {
+    color: hsl(240, 6%, 50%);
+    width: 100%;
+    padding-top: 10px;
+    display: none;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+@media (max-width: 800px) {
+    html {
+        height: 1024px;
+    }
+
+    .content {
+        background: white;
+        width: 700px;
+        margin: 120px auto;
+        height: 650px;
+    }
+    .images {
+        background: url(images/bg-pattern-mobile.svg);
+        background-repeat: no-repeat;
+        background-position-x:center;
+        background-position-y: 10px;
+    }
+    
+    .woman {
+        background: none;
+        height: 0%;
+    }
+
+    .content img {
+        position: absolute;
+        display: block;
+        transform: translate(210px, -100px);
+    }
+    
+    #box {
+        display: none;
+    }
+    
+    .text {
+        transform: translate(150px, -500px);
+    } 
+    .text img {
+        position: sticky;
+        display: block;
+        float: right;
+        transform: translate(0px,10px);
+        transform: rotate(0deg);
+    }
+}
+
+@media (max-width: 600px) {
+    html {
+        height: 980px;
+    }
+
+    .content {
+        background: white;
+        width: 500px;
+        margin: 120px auto;
+        height: 650px;
+    }
+    .images {
+        background: url(images/bg-pattern-mobile.svg);
+        background-repeat: no-repeat;
+        background-position-x: center;
+        background-position-y: 10px;
+    }
+    
+    .woman {
+        background: none;
+    }
+
+    .content img {
+        position: absolute;
+        display: block;
+        transform: translate(100px, -100px);
+    }
+    
+    #box {
+        display: none;
+    }
+    
+    .text {
+        transform: translate(75px, -500px);
+        width: 350px;
+    }
+    
+    .text h1 {
+        padding-bottom: 15px;
+        font-size: 35px;
+        color: hsl(237, 12%, 33%);
+        font-weight: 700;
+        text-align: center;
+    }
+    
+    .questions {
+        color: hsl(237, 12%, 33%);
+    }
+    
+    .text li {
+        padding-top: 8px;
+        padding-bottom: 10px;
+        font-size: 17px;
+        border-bottom: 2px solid hsl(240, 5%, 91%);
+        border-spacing: 20px;
+        list-style: none;
+    }
+    
+    .text li:hover {
+        color: hsl(14, 88%, 65%);
+    }
+    
+    .text img {
+        position: sticky;
+        float: right;
+        transform: translateY(10px);
+        transform: rotate(0deg);
+    }
+    
+    .text p {
+        color: hsl(240, 6%, 50%);
+        width: 100%;
+        padding-top: 10px;
+        display: none;
+        font-size: 13px;
+    }   
+}
+
+@media (max-width: 500px) {
+    .content {
+        background: white;
+        width: 380px;
+        margin: 100px auto;
+        height: 620px;
+    }
+    .images {
+        background: url(images/bg-pattern-mobile.svg);
+        background-repeat: no-repeat;
+        background-position-x: center;
+        background-position-y: 10px;
+    }
+    
+    .woman {
+        background: none;
+    }
+
+    .content img {
+        position: absolute;
+        display: block;
+        transform: translate(50px, -100px);
+    }
+    
+    #box {
+        display: none;
+    }
+    
+    .text {
+        transform: translate(25px, -500px);
+        width: 330px;
+    }
+    
+    .text h1 {
+        padding-bottom: 15px;
+        font-size: 35px;
+        color: hsl(237, 12%, 33%);
+        font-weight: 700;
+        text-align: center;
+    }
+    
+    .questions {
+        color: hsl(237, 12%, 33%);
+    }
+    
+    .text li {
+        padding-top: 8px;
+        padding-bottom: 8px;
+        font-size: 17px;
+        border-bottom: 2px solid hsl(240, 5%, 91%);
+        border-spacing: 20px;
+        list-style: none;
+    }    
+    .text li:hover {
+        color: hsl(14, 88%, 65%);
+    }    
+    .text img {
+        position: sticky;
+        float: right;
+        transform: translateY(10px);
+        transform: rotate(0deg);
+    }
+    
+    .text p {
+        color: hsl(240, 6%, 50%);
+        width: 100%;
+        padding-top: 10px;
+        display: none;
+        font-size: 13px;
+    }   
+}
+
+@media (max-width: 400px) {
+    section {
+        height: 700px;
+    }
+    .content {
+        background: white;
+        width: 310px;
+        margin: 150px auto;
+        height: 650px;
+    }
+    .images {
+        background: url(images/bg-pattern-mobile.svg);
+        background-repeat: no-repeat;
+        background-position-x: center;
+        background-position-y: 10px;
+    }
+    .woman {
+        background: none;
+    }
+    .content img {
+        position: absolute;
+        display: block;
+        transform: translate(10px, -100px);
+    }    
+    #box {
+        display: none;
+    }    
+    .text {
+        transform: translate(20px, -500px);
+        width: 270px;
+    }    
+    .text h1 {
+        padding-bottom: 15px;
+        font-size: 35px;
+        color: hsl(237, 12%, 33%);
+        font-weight: 700;
+        text-align: center;
+    }    
+    .questions {
+        color: hsl(237, 12%, 33%);
+    }
+    .text li {
+        padding-top: 8px;
+        padding-bottom: 10px;
+        font-size: 12px;
+        border-bottom: 2px solid hsl(240, 5%, 91%);
+        border-spacing: 20px;
+        list-style: none;
+    }   
+    .text li:hover {
+        color: hsl(14, 88%, 65%);
+    }    
+    .text img {
+        position: sticky;
+        float: right;
+        transform: translateY(10px);
+        transform: rotate(0deg);
+    }    
+    .text p {
+        font-size: 13px;
+    }   
+}
