@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;400;500;600;700&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Libre Franklin";
+}
+header {
+    text-align: center;
+    padding-top: 50px;
+}
+.text {
+    text-align: center;
+    padding-top: 30px;
+    font-size: 25px;
+}
+.text h1 {
+    color: hsl(0, 0%, 59%);
+    font-weight: 300;
+    padding-bottom: 10px;
+    letter-spacing: 1px;
+}
+.text span {
+    color:hsl(209, 33%, 12%);
+    font-weight: 700;
+}
+.text p {
+    color: hsl(209, 33%, 12%);
+    padding-bottom: 25px;
+    letter-spacing: 1px;
+}
+.mail {
+    text-align: center;
+    padding-bottom: 50px;
+    display: inline-flex;
+}
+.mail p {
+    padding:5px 100px 0px 0px;
+    color: hsl(354, 100%, 66%);
+    font-style: italic;
+}
+#mail {
+    width: 320px;
+    padding: 15px;
+    border-radius: 30px;
+    outline: none;
+    border: 1px solid hsl(0, 0%, 59%);
+    opacity: 0.7;
+    font-size: 13px;
+}
+#mail::placeholder {
+    color: hsl(0, 0%, 59%);
+}
+button {
+    padding: 15px;
+    margin-left: 10px;
+    width: 200px;
+    border-radius: 30px;
+    color: white;
+    background: hsl(223, 87%, 63%);
+    border: none;
+    font-size: 14px;
+    letter-spacing: 1px;
+    box-shadow: 0 5px 7px hsl(223, 100%, 88%);
+}
+button:hover {
+    opacity: 0.7;
+}
+section {
+    text-align: center
+}
+section img {
+    width: 550px;
+}
+footer {
+    text-align: center;
+    padding-top: 50px;
+}
+footer .socials {
+    padding-bottom: 20px;
+}
+footer .socials i {
+    margin: 0px 3px;
+    padding: 5px 5px;
+    border: 1px solid hsl(0, 0%, 59%);
+    border-radius: 50%;
+    color: hsl(223, 87%, 63%);
+}
+footer .socials i:hover {
+    background: hsl(223, 87%, 63%);
+    color: white;
+}
+footer .footer-text p {
+    color:hsl(0, 0%, 59%);
+}
+
+@media (max-width: 500px) {
+    header {
+        text-align: center;
+        padding-top: 50px;
+    }
+    .text {
+        text-align: center;
+        padding-top: 30px;
+        font-size: 15px;
+    }
+    .text h1 {
+        color: hsl(0, 0%, 59%);
+        font-weight: 300;
+        padding-bottom: 15px;
+        letter-spacing: 1px;
+    }
+    .text span {
+        color:hsl(209, 33%, 12%);
+        font-weight: 600;
+    }
+    .text p {
+        color: hsl(209, 33%, 12%);
+        padding-bottom: 25px;
+        letter-spacing: 1px;
+    }
+    .mail {
+        display: block;
+        text-align: center;
+        padding-bottom: 50px;
+    }
+    .mail p {
+        padding-bottom: 20px;
+        color: hsl(354, 100%, 66%);
+        font-style: italic;
+        padding:10px 30px 10px 0px
+    }
+    #mail {
+        width: 250px;
+        padding: 12px;
+        font-size: 11px;
+    }
+    button {
+        padding: 12px;
+        width: 250px;
+        font-size: 11px;
+    }
+    section {
+        text-align: center
+    }
+    section img {
+        padding-top: 40px;
+        width: 300px;
+    }
+    footer {
+        padding:180px 0 20px 0; 
+    }
+    footer .socials {
+        padding-bottom: 20px;
+    }
+}
+
