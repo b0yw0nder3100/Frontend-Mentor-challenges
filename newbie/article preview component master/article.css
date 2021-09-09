@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: hsl(210, 46%, 95%);
+    font-family: "Manrope";
+}
+section {
+    display: inline-flex;
+    padding: 200px;
+    justify-content: center;
+}
+.leftside img{
+    width: 500px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.rightside {
+    background: #fff;
+    padding: 35px;
+    width: 600px;
+    height: 400px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.rightside h3 {
+    font-weight: 700;
+    font-size: 28px;
+    padding-bottom: 10px;
+    color: hsl(217, 19%, 35%);
+}
+.rightside h4 {
+    font-weight: 400;
+    font-size: 18px;
+    padding-bottom: 20px;
+    line-height: 30px;
+    color: hsl(212, 23%, 69%);
+}
+.contactinfo {
+    display: flex;
+    justify-content: space-between;
+}
+.user {
+    display: inline-flex;
+}
+.image img{
+    margin-top: 10px;
+    width: 87.5px;
+    border-radius: 50%;
+}
+.userinfo {
+    padding-left: 10px;
+}
+.userinfo h5 {
+    margin-top: 20px;
+    font-size: 25px;
+    color: hsl(217, 19%, 35%);
+}
+.userinfo p {
+    font-size: 20px;
+    color: hsl(212, 23%, 69%);
+}
+.share img {
+    margin-top: 60px;
+    padding: 10px;
+    background: hsl(210, 46%, 95%);
+    border-radius: 50%;
+    cursor: pointer;
+}
+.share img:hover {
+    background: hsl(217, 19%, 35%);
+}
+
+aside {
+    position: absolute;
+    background-color: hsl(217, 19%, 35%);
+    padding: 20px 40px;
+    border-radius: 10px;
+    transform: translate(350px, -120px);
+    display: none;
+    z-index: 2;
+}
+
+aside h5 {
+    padding: 0px 25px 0px 5px;
+    font-size: 15px;
+    color: hsl(212, 23%, 69%);
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+aside img {
+    padding: 0px 10px;
+}
+
+
+@media (max-width: 800px) {
+    section {
+        display: block;
+        padding: 0;
+        margin: 50px 50px;
+        text-align: center;
+    }
+    .leftside img{
+        width: 500px;
+        height: 350px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 0px;
+    }
+    .rightside {
+        width: 500px;
+        height: 450px;
+        margin: auto;
+        text-align: left;
+        padding: 50px;
+        width: 500px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        border-top-right-radius: 0px;
+    }
+    .rightside h3 {
+        font-size: 25px;
+        padding-bottom: 15px;
+    }
+    .userinfo h5 {
+        font-size: 20px;
+    }
+    .userinfo p {
+        font-size: 18px;
+    }
+    .share img {
+        width: 50px;
+        padding: 10px;
+    }
+    .share img:hover {
+        background: hsl(217, 19%, 35%);
+    }
+
+    aside {
+        transform: translate(250px, -120px);
+    }
+}
+
+@media (max-width: 450px) {
+    section {
+        display: block;
+        padding: 0;
+        margin: 50px 0px;
+        text-align: center;
+    }
+    .leftside img{
+        width: 300px;
+        height: 200px;
+    }
+    .rightside {
+        width: 300px;
+        height: 310px;
+        padding: 30px;
+    }
+    .rightside h3 {
+        font-size: 15px;
+        padding-bottom: 10px;
+    }
+    .rightside h4 {
+        font-size: 13px;
+        line-height: 20px;
+    }
+    .image img{
+        margin-top: 10px;
+        width: 50px;
+        border-radius: 50%;
+    }
+    .userinfo {
+        padding-left: 10px;
+    }
+    .userinfo h5 {
+        font-size: 12px;
+    }
+    .userinfo p {
+        font-size: 13px;
+    }
+    .share img {
+        margin-top: 30px;
+        width: 30px;
+        padding: 7.5px;
+        position: absolute;
+        z-index: 100;
+        transform: translate(-10px, 8px);
+    }
+    aside {
+        padding: 25px 51px 25px 20px;
+        width: 300px;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        transform: translate(-32px, -49px);
+    }
+}
