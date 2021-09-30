@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lexend+Deca:wght@400;500;600;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background: hsl(233, 47%, 7%);
+  height: 100vh;
+  color: white;
+}
+section {
+  display: flex;
+  padding: 100px;
+  justify-content: center;
+}
+section > * {
+  flex-basis: 45%;
+}
+.left-side {
+  background: hsl(244, 38%, 16%);
+  padding: 100px 50px;
+  border-top-left-radius: 7px;
+  border-bottom-left-radius: 7px;
+}
+.left-side h1 {
+  margin: 20px 0 0 0;
+  font-size: 35px;
+  font-family: "inter";
+}
+.left-side h1 span {
+  color: hsl(277, 64%, 61%);
+}
+.left-side p {
+  margin: 40px 0 0 0;
+  font-size: 17px;
+  line-height: 20px;
+  width: 85%;
+  font-family: "Lexend Deca";
+  opacity: 0.7;
+}
+.stats h6 {
+  margin-top: 40px;
+  font-size: 20px;
+  font-family: "inter";
+}
+.stats p {
+  font-size: 10px;
+  margin: 0;
+}
+.right-side {
+  border-top-right-radius: 7px;
+  border-bottom-right-radius: 7px;
+  background: url(images/image-header-desktop.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.stats {
+  text-transform: uppercase;
+  display: flex;
+  justify-content: space-between;
+  width: 85%;
+}
+@media (max-width: 1054px) {
+  section {
+    padding: 100px 50px;
+  }
+  .left-side {
+    background: hsl(244, 38%, 16%);
+    padding: 20px 50px;
+  }
+}
+@media (max-width: 768px) {
+  section {
+    flex-direction: column-reverse;
+    padding: 100px 50px;
+  }
+  section > * {
+    flex-basis: 100%;
+  }
+  .left-side {
+    background: hsl(244, 38%, 16%);
+    padding: 50px;
+    text-align: center;
+    border-bottom-right-radius: 7px;
+    border-bottom-left-radius: 7px;
+    border-top-left-radius: 0;
+  }
+  .left-side p {
+    width: 100%;
+  }
+  .right-side {
+    padding: 300px;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 0;
+  }
+  .stats {
+    width: 100%;
+  }
+}
+@media (max-width: 700px) {
+  body {
+    padding: 20px;
+  }
+  section {
+    flex-direction: column-reverse;
+    padding: 15px;
+  }
+  .left-side {
+    padding: 20px;
+  }
+  .left-side h1 {
+    font-size: 22px;
+  }
+  .left-side p {
+    font-size: 14px;
+    width: 100%;
+  }
+  .stats h6 {
+    font-size: 20px;
+  }
+  .stats p {
+    font-size: 10px;
+    text-align: center;
+  }
+  .right-side {
+    padding: 120px;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+  }
+  .stats {
+    text-transform: uppercase;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+  }
+}
